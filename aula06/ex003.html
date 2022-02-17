@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body {
+            background-color: rgb(70, 23, 114);
+            color: whitesmoke;
+            font: Arial 16pt normal;  
+        }
+        h1 {
+            color: rgba(24, 24, 245, 0.753);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!!!</h1>
+    <p>Meu primeiro exercício de JavaScript</p>
+    <script>
+       var n1 = Number(prompt('Digite um número:'))        //várias maneiras de definir o tipo da variável
+       var n2 = parseInt(prompt('Digite outro número:'))
+       var n3 = parseFloat(prompt('Digite mais um número'))
+       var soma = n1 + n2 + n3
+       String(soma)
+       n1.toString()
+       alert(`A soma é igual a ${soma}`) //template string
+       alert('A soma é igual a '+ soma) //concatenação
+       // + pode servir tanto para adição quanto para concatenação
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        body {
+            background: deepskyblue;
+            font: normal 15pt Arial;
+        }
+        header {
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        section {
+            background: rgba(255, 255, 255, 0.918);
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+        }
+        footer {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-style: italic;
+        }
+        div {
+            text-align: center;
+            padding: 8px;
+            font: bold 15pt Arial;
+        }
+            
+        
+    </style>
+</head>
+<body onload = "carregar()">
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    <section id="corpo2">
+        <div id="msg">
+             
+        </div>
+        <div>
+           <img id="img" src="imagens/dia.png" alt="Foto manhã"> 
+        </div>
+        <div id="msg2">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Eu</p>
+    </footer>
+    <script>
+        function carregar() {
+            var agora = new Date()
+            var hora = agora.getHours()
+            var hdiv = document.getElementById("msg")
+            var idiv = document.getElementById("img")
+            var div2 = document.getElementById("msg2")
+            var corpo = document.body
+            var sec = document.getElementById("corpo2")
+            msg.innerHTML = `Agora são ${hora} horas`
+            
+            if (hora >= 5 && hora < 12 ) {
+                img.src = "imagens/dia.png"
+                msg2.innerHTML = "Bom dia"
+                corpo.style.backgroundColor= "#a5dafd"
+            } else if (hora >=12 && hora < 18) {
+                img.src = "imagens/tarde.png"
+                msg2.innerHTML = "Boa Tarde"
+                corpo.style.backgroundColor = "#ed722a"
+                sec.style.backgroundColor = "#ffe56e"
+            } else {
+                img.src = "imagens/noite.png"
+                msg2.innerHTML = "Boa Noite"
+                corpo.style.backgroundColor = "#111a21"
+                sec.style.backgroundColor = "#4d5d61"
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>

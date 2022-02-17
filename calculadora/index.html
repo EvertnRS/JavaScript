@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section class="cima"><br>
+        <div id="vis">
+
+        </div>
+    </section>
+    <section class="corpo">
+        
+        
+        <div>
+            <input type="button" value="%" id="por" class="btn">
+            <input type="button" value="CE" id="ce" class="btn">
+            <input type="button" value="C" id="c" class="btn">
+            <input type="button" value="Del" id="del"
+            class="btn">
+        </div>
+
+        <div>
+            <input type="button" value="1/x" id="inv" class="btn">
+            <input type="button" value="x²" id="pot" class="btn">
+            <input type="button" value="&radic;" id="raiz" class="btn">
+            <input type="button" value="/" id="div"
+            class="btn">
+        </div>
+        
+        <div>
+            <input type="button" value="7" id="n7" class="btn" onclick="aparecer(7)">
+            <input type="button" value="8" id="n8" class="btn" onclick="aparecer(8)">
+            <input type="button" value="9" id="n9" class="btn" onclick="aparecer(9)">
+            <input type="button" value="x"
+            id="mul" class="btn"> 
+        </div>
+
+        <div>
+            <input type="button" value="4" id="n4" class="btn" onclick="aparecer(4)">
+            <input type="button" value="5" id="n5" class="btn" onclick="aparecer(5)">
+            <input type="button" value="6" id="n6"
+            class="btn" onclick="aparecer(6)">
+            <input type="button" value="-" id="sub" class="btn"> 
+        </div>
+
+        <div>
+            <input type="button" value="1" id="n1" class="btn" onclick="aparecer(1)">
+            <input type="button" value="2" id="n2" class="btn" onclick="aparecer(2)">
+            <input type="button" value="3" id="n3" class="btn" onclick="aparecer(3)">
+            <input type="button" value="+" id="som" class="btn">
+        </div>
+        <div>
+            <input type="button" value="+/-" id="op" class="btn">
+            <input type="button" value="0" id="n0" class="btn" onclick="aparecer(0)">
+            <input type="button" value="," id="virg" class="btn" onclick="virgula()">
+            <input type="button" value="=" id="res" class="btn">
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: rgb(35, 37, 37);
+}
+header {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+}
+.corpo {
+    width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+.cima {
+    border-radius: 4px;
+    width: 490px;
+    height: 75px;
+    text-align: end;
+    font-size: 2em;
+    background: white;
+    margin: auto;
+}
+.btn {
+    width: 120px;
+    height: 60px;
+    font-size: 27px;
+}
+
+
+
+
