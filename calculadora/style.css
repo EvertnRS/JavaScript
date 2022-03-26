@@ -10,6 +10,11 @@ header {
     font-size: 20px;
     color: white;
 }
+.tudo{
+    background-color: rgb(86, 166, 236);
+    padding: 5px;
+    margin: auto;
+}
 .corpo {
     width: 500px;
     margin: auto;
