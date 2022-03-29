@@ -4,7 +4,7 @@ let mat = null
 let port = null
 let nat = null
 let hum = null
-let med = (red*2 + mat*4 + port*2 + nat + hum)/10
+let med = null
 
 function adicionar(){
     nome = prompt("Nome do aluno: ")
@@ -13,36 +13,39 @@ function adicionar(){
     port = prompt("Nota de Português: ")
     nat = prompt("Nota de Ciências Naturais: ")
     hum = prompt("Nota de Ciência Humanas: ")
+    med = (red*2 + mat*4 + port*2 + nat + hum)/10
+    lista = {
+        nome: nome,
+        redacao: red,
+        matematica: mat,
+        portugues: port,
+        natureza: nat,
+        humanas: hum,
+        media: med
+    }
+    return lista
 }
 
-lista = {
-    nome: nome,
-    redacao: red,
-    matematica: mat,
-    portugues: port,
-    natureza: nat,
-    humanas: hum,
-    media: med
-}
 
-listaAluno = []
-listaAluno = listaAluno.push(lista)
+let listaAluno = []
 
 let comando = null
 
 while (comando != "fechar"){
-     comando = prompt(`Digite se quer "ver" ou "adicionar" uma nota ou "fechar" o programa: `).toLowerCase()
+     comando = prompt(`Digite se quer "ver" ou "adicionar" uma nota ou "fechar" o programa: `)
+     comando = comando.toLowerCase()
     
     if (comando == "ver"){
         if (listaAluno.length == 0){
-            console.log("Lista Vazia")
-        } else {
+            alert("Lista Vazia")
+        } else if (listaAluno.length != 0){
             for (let c = 0; c < listaAluno.length; c++){
-                console.log(listaAluno[c])
+                alert(listaAluno[c])
             }
         }
     } else if (comando == "adicionar"){
-        adicionar()
+        listaAluno.push(adicionar()) 
+        
     } else {
         console.error("Erro");
     }
