@@ -14,7 +14,7 @@ function adicionar(){
     nat = prompt("Nota de Ciências Naturais: ")
     hum = prompt("Nota de Ciência Humanas: ")
     med = (red*2 + mat*4 + port*2 + nat + hum)/10
-    lista = {
+    let lista = {
         nome: nome,
         redacao: red,
         matematica: mat,
@@ -40,7 +40,7 @@ while (comando != "fechar"){
             alert("Lista Vazia")
         } else if (listaAluno.length != 0){
             for (let c = 0; c < listaAluno.length; c++){
-                alert(listaAluno[c])
+                alert("Nomes: "+listaAluno[c].nome + "\n " + "Redação: "+listaAluno[c].redacao + "\n" + "Matemática: "+listaAluno[c].matematica + "\n" + "Português: "+listaAluno[c].portugues + "\n" + "Natureza: "+listaAluno[c].natureza + "\n" + "Média: "+listaAluno[c].humanas + "\n" + listaAluno[c].media)
             }
         }
     } else if (comando == "adicionar"){
