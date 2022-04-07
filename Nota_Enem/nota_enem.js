@@ -13,6 +13,11 @@ function adicionar(){
     port = prompt("Nota de Português: ")
     nat = prompt("Nota de Ciências Naturais: ")
     hum = prompt("Nota de Ciência Humanas: ")
+    red = Number(red)
+    mat = Number(mat)
+    port = Number(port)
+    nat = Number(nat)
+    hum = Number(hum)
     med = (red*2 + mat*4 + port*2 + nat + hum)/10
     let lista = {
         nome: nome,
